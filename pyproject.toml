@@ -1,0 +1,18 @@
+[project]
+name = "sentimentscope"
+version = "1.0.0"
+description = "Brand sentiment radar: lexicon-based sentiment analysis with spike alerts. Fully offline, no API keys."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["matplotlib==3.6.3"]
+
+[project.scripts]
+sentimentscope = "sentimentscope.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

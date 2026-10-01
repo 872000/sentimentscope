@@ -1,0 +1,3 @@
+# Runtime dependency: matplotlib for dashboard PNGs.
+# Everything else is Python stdlib. No API keys, no network calls.
+matplotlib==3.6.3

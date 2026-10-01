@@ -1,0 +1,14 @@
+{
+  "alerts": {
+    "min_volume": 20,
+    "negative_surge_threshold": 0.25,
+    "sentiment_drop_threshold": 0.35
+  },
+  "dashboard": {
+    "dpi": 150,
+    "figsize": [
+      12,
+      5
+    ]
+  }
+}

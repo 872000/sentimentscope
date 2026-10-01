@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Secrets (there are none — this project is fully offline)
+.env
+*.pem
+*.key
