@@ -73,6 +73,10 @@ def analyze(text: str) -> dict:
     Returns ``{"text", "score", "label", "raw", "tokens"}`` where ``tokens``
     is a list of ``(token, contribution)`` for sentiment-bearing tokens.
     """
+    if not isinstance(text, str):
+        raise TypeError(
+            f"analyze() expects a string, got {type(text).__name__}"
+        )
     tokens = tokenize(text)
     contributions: list[tuple[str, float]] = []
     raw = 0.0

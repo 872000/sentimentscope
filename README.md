@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-23%20passing-brightgreen)](#quickstart)
+[![Tests](https://img.shields.io/badge/tests-24%20passing-brightgreen)](#quickstart)
 [![Offline](https://img.shields.io/badge/offline-no%20API%20keys-orange)](#tech-stack)
 
 **SentimentScope watches what the internet says about your brand and shouts when the mood turns.**
@@ -69,7 +69,7 @@ score: -0.5238   label: negative
 - **Negation / intensifier handling** — custom scope-based implementation
 - **Spike detection** — day-over-day sentiment drop & trailing-mean negative-surge rules
 - **matplotlib** (pinned) — dashboard PNGs; everything else is stdlib
-- **pytest** — 23-test suite covering engine, aggregation, and alerts
+- **pytest** — 24-test suite covering engine, aggregation, and alerts
 
 ## Quickstart
 

@@ -105,6 +105,14 @@ def test_analyze_trace_shape():
     assert r["tokens"] == [("good", pytest.approx(1.5))]
 
 
+def test_analyze_rejects_non_string_input():
+    # Garbage in should fail fast with a clear TypeError, not deep inside
+    # the regex tokenizer.
+    for bad in (None, 42, ["good"]):
+        with pytest.raises(TypeError, match="expects a string"):
+            analyze(bad)
+
+
 # ------------------------------------------------------------ aggregation
 @pytest.fixture(scope="module")
 def daily():
